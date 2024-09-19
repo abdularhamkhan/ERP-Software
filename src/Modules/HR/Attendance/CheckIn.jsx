@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const CheckIn = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+	return <div>hi</div>;
+};
 
-export default CheckIn
+export default CheckIn;

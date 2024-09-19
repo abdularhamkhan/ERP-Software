@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const AttendanceLog = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+	return <div>hi</div>;
+};
 
-export default AttendanceLog
+export default AttendanceLog;

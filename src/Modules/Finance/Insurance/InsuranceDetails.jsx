@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const InsuranceDetails = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+	return <div>hi</div>;
+};
 
-export default InsuranceDetails
+export default InsuranceDetails;

@@ -1,16 +1,13 @@
-import { Link } from "react-router-dom";
-import LoginForm from "./LoginForm";
 import AuthLayout from "./AuthLayout";
+import LoginForm from "./LoginForm";
 
 const Login = () => {
-  return (
-    <AuthLayout>
-      <Link to="/login">
-        <LoginForm />
-        <h1>Hey</h1>
-      </Link>
-    </AuthLayout>
-  );
+	return (
+		<AuthLayout>
+			<LoginForm />
+			<h1>Hey</h1>
+		</AuthLayout>
+	);
 };
 
 export default Login;

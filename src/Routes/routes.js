@@ -1,9 +1,15 @@
-import Login from "../Modules/Auth/Login"
+import Home from "../Home";
+import Login from "../Modules/Auth/Login";
 
-export const routes =
-[
-    {
-        path:'login',
-        element : <Login/>
-    },
-]
+const routes = [
+	{
+		path: "/",
+		element: <Home />,  
+	},
+	{
+		path: "/login",
+		element: <Login />,  
+	},
+];
+
+export default routes;

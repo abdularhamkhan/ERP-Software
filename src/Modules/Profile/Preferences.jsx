@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Preferences = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+	return <div>hi</div>;
+};
 
-export default Preferences
+export default Preferences;

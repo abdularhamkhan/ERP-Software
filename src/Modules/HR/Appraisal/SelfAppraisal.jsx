@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const SelfAppraisal = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+	return <div>hi</div>;
+};
 
-export default SelfAppraisal
+export default SelfAppraisal;

@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const LoanDetails = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+	return <div>hi</div>;
+};
 
-export default LoanDetails
+export default LoanDetails;

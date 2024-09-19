@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const LeaveApplication = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+	return <div>hi</div>;
+};
 
-export default LeaveApplication
+export default LeaveApplication;

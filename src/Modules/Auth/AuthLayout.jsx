@@ -1,14 +1,12 @@
-import React from "react"
-import Login from "./Login"
+import React from "react";
 
-const AuthLayout = ( {children} ) => {
-  return (
-    <div>
-    <h1 className="text-center bg-black font-5xl font-serif">ERP</h1>
-     <Login/>
-      {children}
-    </div>
-  )
-}
+const AuthLayout = ({ children }) => {
+	return (
+		<div>
+			<h1>chal jao please</h1>
+			{children}
+		</div>
+	);
+};
 
-export default AuthLayout
+export default AuthLayout;

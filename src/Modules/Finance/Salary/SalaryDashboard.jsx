@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const SalaryDashboard = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+	return <div>hi</div>;
+};
 
-export default SalaryDashboard
+export default SalaryDashboard;

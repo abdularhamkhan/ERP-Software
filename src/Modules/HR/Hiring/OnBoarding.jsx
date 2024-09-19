@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const OnBoarding = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+	return <div>hi</div>;
+};
 
-export default OnBoarding
+export default OnBoarding;
