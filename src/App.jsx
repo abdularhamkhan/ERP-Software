@@ -5,7 +5,7 @@ const App = () => {
 	const routing = useRoutes(routes);
 	return (
 		<>
-			<h2 className="text-yellow-600 font-bold text-5xl">{routing}</h2>
+			{routing}
 		</>
 	);
 };

@@ -4,8 +4,9 @@ import LoginForm from "./LoginForm";
 const Login = () => {
 	return (
 		<AuthLayout>
+			<div className="flex flex-col items-center content-center justify-center h-screen">
 			<LoginForm />
-			<h1>Hey</h1>
+			</div>
 		</AuthLayout>
 	);
 };
