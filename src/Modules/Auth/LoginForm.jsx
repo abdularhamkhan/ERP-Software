@@ -78,7 +78,7 @@ export default function LoginForm() {
         </form>
       </CardContent>
       <CardFooter>
-        <Button variant="link" className="w-full">Forgot Password?</Button>
+        <Button variant="link" className="w-full text-blue-500">Forgot Password?</Button>
       </CardFooter>
     </Card>
   )
