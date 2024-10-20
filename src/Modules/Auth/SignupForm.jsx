@@ -30,7 +30,7 @@ const loginSchema = z.object({
     }),
 });
 
-export default function LoginForm() {
+export default function SignupForm() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [errors, setErrors] = useState({})
@@ -42,7 +42,7 @@ export default function LoginForm() {
       const validatedData = loginSchema.parse({ email, password });
 
       // Attempt to sign in with Supabase
-      const { data, error } = await supabase.auth.signInWithPassword({
+      const { data, error } = await supabase.auth.signUp({
         email: validatedData.email,
         password: validatedData.password,
       })
@@ -67,7 +67,7 @@ export default function LoginForm() {
   return (
     <Card className="w-[350px]">
       <CardHeader>
-        <CardTitle className='text-center'>Login to ERP</CardTitle>
+        <CardTitle className='text-center'>SignUp</CardTitle>
         <CardDescription className='text-center mt-2'>Enter your credentials to access ERP.</CardDescription>
       </CardHeader>
       <CardContent>
@@ -112,6 +112,9 @@ export default function LoginForm() {
       </CardContent>
       <CardFooter>
         <Button variant="link" className="w-full text-blue-500">Forgot Password?</Button>
+      </CardFooter>
+      <CardFooter>
+        <Button variant="link" className="w-full text-blue-500">Login?</Button>
       </CardFooter>
     </Card>
   )

@@ -1,5 +1,4 @@
-import { Link, useRoutes } from "react-router-dom";
-import Login from "./Modules/Auth/Login";
+import { useRoutes } from "react-router-dom";
 import routes from "./Routes/routes";
 const App = () => {
 	const routing = useRoutes(routes);

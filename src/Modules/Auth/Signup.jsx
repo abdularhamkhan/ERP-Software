@@ -1,8 +1,11 @@
-import React from "react";
-import AuthLayout from "./AuthLayout";
-
+import React from 'react'
+import LoginForm from './LoginForm'
 const Signup = () => {
-	return <AuthLayout>Signup</AuthLayout>;
-};
+    return (
+            <div className="flex flex-col items-center content-center justify-center h-screen">
+                <LoginForm />
+            </div>
+    )
+}
 
-export default Signup;
+export default Signup
