@@ -1,46 +1,46 @@
 //Auth
-import Login from "@/Modules/Auth/Login";
-import Signup from "@/Modules/Auth/Signup";
-import Welcome from "@/Modules/Auth/Welcome";
-import NotFound from "@/Modules/Auth/NotFound";
+import Login from "@/Pages/Auth/Login";
+import Signup from "@/Pages/Auth/Signup";
+import Welcome from "@/Pages/Auth/Welcome";
+import NotFound from "@/Pages/Auth/NotFound";
 ////////////////management
 //hr
-import HrDashboard from "@/Modules/Roles/Management/HrManager/HrDashboard";
-import Hiring from "@/Modules/Roles/Management/HrManager/Hiring/Hiring";
-import JobPosting from "@/Modules/Roles/Management/HrManager/Hiring/JobPosting";
-import OnBoarding from "@/Modules/Roles/Management/HrManager/Hiring/OnBoarding";
-import Leaves from "@/Modules/Roles/Management/HrManager/Leaves";
-import Appraisal from "@/Modules/Roles/Management/HrManager/Appraisal";
+import HrDashboard from "@/Pages/Roles/Management/HrManager/HrDashboard";
+import Hiring from "@/Pages/Roles/Management/HrManager/Hiring/Hiring";
+import JobPosting from "@/Pages/Roles/Management/HrManager/Hiring/JobPosting";
+import OnBoarding from "@/Pages/Roles/Management/HrManager/Hiring/OnBoarding";
+import Leaves from "@/Pages/Roles/Management/HrManager/Leaves";
+import Appraisal from "@/Pages/Roles/Management/HrManager/Appraisal";
 //admin
-import AdminDashboard from "@/Modules/Roles/Management/Admin/AdminDashboard";
+import AdminDashboard from "@/Pages/Roles/Management/Admin/AdminDashboard";
 ////////////////////employee
 //profile
-import Profile from "@/Modules/Profile/Profile";
-import ProfileSettings from "@/Modules/Profile/ProfileSettings";
-import Preferences from "@/Modules/Profile/Preferences";
+import Profile from "@/Pages/Profile/Profile";
+import ProfileSettings from "@/Pages/Profile/ProfileSettings";
+import Preferences from "@/Pages/Profile/Preferences";
 //dashboard
-import EmployeeDashboard from "@/Modules/Roles/Employee/EmployeeDashboard";
+import EmployeeDashboard from "@/Pages/Roles/Employee/EmployeeDashboard";
 /////Employee Affairs related to HR Module
 //Attendance
-import AttendanceLog from "@/Modules/Roles/Employee/HR/Attendance/AttendanceLog";
-import CheckIn from "@/Modules/Roles/Employee/HR/Attendance/CheckIn";
-import CheckOut from "@/Modules/Roles/Employee/HR/Attendance/CheckOut";
+import AttendanceLog from "@/Pages/Roles/Employee/HrAffairs/Attendance/AttendanceLog";
+import CheckIn from "@/Pages/Roles/Employee/HrAffairs/Attendance/CheckIn";
+import CheckOut from "@/Pages/Roles/Employee/HrAffairs/Attendance/CheckOut";
 //leave
-import LeaveApplication from "@/Modules/Roles/Employee/HR/Leave/LeaveApplication";
+import LeaveApplication from "@/Pages/Roles/Employee/HrAffairs/Leave/LeaveApplication";
 //self appraisal
-import SelfAppraisal from "@/Modules/Roles/Employee/HR/Appraisal/SelfAppraisal";
+import SelfAppraisal from "@/Pages/Roles/Employee/HrAffairs/Appraisal/SelfAppraisal";
 /////Employee Affairs related to Finance Module
 //Loan
-import Loan from "@/Modules/Roles/Employee/Finance/Loan/Loan";
-import LoanDetails from "@/Modules/Roles/Employee/Finance/Loan/LoanDetails";
-import CheckLoanRequest from "@/Modules/Roles/Employee/Finance/Loan/CheckLoanRequest";
-import RequestLoan from "@/Modules/Roles/Employee/Finance/Loan/RequestLoan";
+import Loan from "@/Pages/Roles/Employee/FinancialAffairs/Loan/Loan";
+import LoanDetails from "@/Pages/Roles/Employee/FinancialAffairs/Loan/LoanDetails";
+import CheckLoanRequest from "@/Pages/Roles/Employee/FinancialAffairs/Loan/CheckLoanRequest";
+import RequestLoan from "@/Pages/Roles/Employee/FinancialAffairs/Loan/RequestLoan";
 //insurance
-import Insurances from "@/Modules/Roles/Employee/Finance/Insurance/Insurances";
-import InsuranceApplication from "@/Modules/Roles/Employee/Finance/Insurance/InsuranceApplication";
-import InsuranceDetails from "@/Modules/Roles/Employee/Finance/Insurance/InsuranceDetails";
+import Insurances from "@/Pages/Roles/Employee/FinancialAffairs/Insurance/Insurances";
+import InsuranceApplication from "@/Pages/Roles/Employee/FinancialAffairs/Insurance/InsuranceApplication";
+import InsuranceDetails from "@/Pages/Roles/Employee/FinancialAffairs/Insurance/InsuranceDetails";
 //salaray
-import SalaryDashboard from "@/Modules/Roles/Employee/Finance/Salary/SalaryDashboard";
+import SalaryDashboard from "@/Pages/Roles/Employee/FinancialAffairs/Salary/SalaryDashboard";
 
 
 // 30 pages/components
