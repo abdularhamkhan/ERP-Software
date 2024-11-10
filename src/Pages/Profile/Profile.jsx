@@ -1,8 +1,11 @@
+import SidebarUI from '@/components/blocks/SidebarUI'
 import React from 'react'
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <div>
+      <SidebarUI/>
+    </div>
   )
 }
 
