@@ -1,4 +1,4 @@
-import SidebarUI from '@/components/blocks/SidebarUI'
+import SidebarUI from '@/components/ui/app-sidebar'
 import React from 'react'
 
 const Profile = () => {

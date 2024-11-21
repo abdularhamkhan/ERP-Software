@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+import { Calendar, Home, Inbox, Search, Settings, ChevronDown } from "lucide-react"
 
 import {
   Sidebar,
@@ -10,6 +10,16 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+
 
 // Menu items.
 const items = [
@@ -40,7 +50,7 @@ const items = [
   },
 ]
 
-export default function SidebarUI() {
+export default function AppSidebar() {
   return (
     <Sidebar>
       <SidebarContent>
@@ -58,6 +68,22 @@ export default function SidebarUI() {
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
+              <DropdownMenu>
+                <DropdownMenuTrigger>
+                  <SidebarMenuButton>
+                    Select Workspace
+                    <ChevronDown className="ml-auto" />
+                  </SidebarMenuButton>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-[--radix-popper-anchor-width]">
+                  <DropdownMenuItem>
+                    <span>Acme Inc</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <span>Acme Corp.</span>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>

@@ -13,6 +13,8 @@ import Leaves from "@/Pages/Roles/Management/HrManager/Leaves";
 import Appraisal from "@/Pages/Roles/Management/HrManager/Appraisal";
 //admin
 import AdminDashboard from "@/Pages/Roles/Management/Admin/AdminDashboard";
+import Admin_CFO from "@/Pages/Roles/Management/Admin/Admin_CFO";
+import Admin_CEO from "@/Pages/Roles/Management/Admin/Admin_CEO";
 ////////////////////employee
 //profile
 import Profile from "@/Pages/Profile/Profile";
