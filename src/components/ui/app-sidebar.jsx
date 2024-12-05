@@ -1,5 +1,5 @@
-import { Calendar, Home, Inbox, Search, Settings, ChevronDown } from "lucide-react"
-
+import { ChevronDown } from "lucide-react";
+import { Link } from "react-scroll"; // Import from react-scroll
 import {
   Sidebar,
   SidebarContent,
@@ -9,48 +9,15 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/components/ui/sidebar"
-
+} from "@/components/ui/sidebar";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 
-
-// Menu items.
-const items = [
-  {
-    title: "Home",
-    url: "#",
-    icon: Home,
-  },
-  {
-    title: "Inbox",
-    url: "#",
-    icon: Inbox,
-  },
-  {
-    title: "Calendar",
-    url: "#",
-    icon: Calendar,
-  },
-  {
-    title: "Search",
-    url: "#",
-    icon: Search,
-  },
-  {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
-  },
-]
-
-export default function AppSidebar() {
+export default function AppSidebar({ items = [] }) {
   return (
     <Sidebar>
       <SidebarContent>
@@ -61,10 +28,16 @@ export default function AppSidebar() {
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url}>
+                    {/* Use Link for smooth scrolling */}
+                    <Link
+                      to={item.url}
+                      smooth={true}
+                      duration={500}
+                      offset={-50} // Offset for fixed headers
+                    >
                       <item.icon />
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
@@ -89,5 +62,5 @@ export default function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
-  )
+  );
 }

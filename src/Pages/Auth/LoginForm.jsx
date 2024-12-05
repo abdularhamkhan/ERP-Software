@@ -7,6 +7,8 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { AlertCircle } from 'lucide-react'
+import { supabase } from '@/lib/client/client'
+
 
 const loginSchema = z.object({
   email: z.string()
@@ -49,7 +51,10 @@ export default function LoginForm() {
 
       console.log('Login attempt with:', validatedData)
       // Check for Supabase errors
+
       if (error) {
+        console.error('Supabase Error:', error.message);
+        console.error('Supabase Error Details:', error);
         setErrors({ general: [error.message] });
         return;
       }

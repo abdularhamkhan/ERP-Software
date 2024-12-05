@@ -13,8 +13,10 @@ import Leaves from "@/Pages/Roles/Management/HrManager/Leaves";
 import Appraisal from "@/Pages/Roles/Management/HrManager/Appraisal";
 //admin
 import AdminDashboard from "@/Pages/Roles/Management/Admin/AdminDashboard";
+// import CreateAdmins from "@/Pages/Roles/Management/Admin/AdminCreation";
 import Admin_CFO from "@/Pages/Roles/Management/Admin/Admin_CFO";
 import Admin_CEO from "@/Pages/Roles/Management/Admin/Admin_CEO";
+import Admin_COO from "@/Pages/Roles/Management/Admin/Admin_COO";
 ////////////////////employee
 //profile
 import Profile from "@/Pages/Profile/Profile";
@@ -96,6 +98,20 @@ const routes = [
 	{
 		path: "admin",
 		element: <AdminDashboard />,
+		children:[
+			{
+				path:"ceo",
+				element:<Admin_CEO/>,
+			},
+			{
+				path:"cfo",
+				element:<Admin_CFO/>,
+			},
+			{
+				path:"coo",
+				element:<Admin_COO/>,
+			},
+		]
 	},
 	{
 		path: "employee",
